@@ -1,6 +1,6 @@
 {
   "name": "@helloextend/kafkajs",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "description": "Tempoary Home of KafkaJS",
   "author": "Tulio Ornelas <ornelas.tulio@gmail.com>",
   "main": "index.js",
