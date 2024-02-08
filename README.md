@@ -1,4 +1,4 @@
-[![npm version](https://img.shields.io/npm/v/kafkajs?color=%2344cc11&label=stable)](https://www.npmjs.com/package/kafkajs) [![npm pre-release version](https://img.shields.io/npm/v/kafkajs/beta?label=pre-release)](https://www.npmjs.com/package/kafkajs) [![Build Status](https://dev.azure.com/tulios/kafkajs/_apis/build/status/tulios.kafkajs?branchName=master)](https://dev.azure.com/tulios/kafkajs/_build/latest?definitionId=2&branchName=master) [![Slack Channel](https://join.slack.com/t/kafkajs/shared_invite/zt-1ezd5395v-SOpTqYoYfRCyPKOkUggK0Abadge.svg)](https://join.slack.com/t/kafkajs/shared_invite/zt-1ezd5395v-SOpTqYoYfRCyPKOkUggK0A)
+[![npm version](https://img.shields.io/npm/v/kafkajs?color=%2344cc11&label=stable)](https://www.npmjs.com/package/kafkajs) [![npm pre-release version](https://img.shields.io/npm/v/kafkajs/beta?label=pre-release)](https://www.npmjs.com/package/kafkajs)
 <br />
 <p align="center">
   <a href="https://kafka.js.org">
@@ -23,16 +23,17 @@
 
 ## Table of Contents
 
-- [About the project](#about)
-  - [Sponsors](#sponsorship)
-  - [Features](#features)
-  - [Getting Started](#getting-started)
-    - [Usage](#usage)
-- [Contributing](#contributing)
-  - [Help Wanted](#help-wanted)
-  - [Contact](#contact)
-- [License](#license)
-  - [Acknowledgements](#acknowledgements)
+- [Table of Contents](#table-of-contents)
+- [ About the Project](#-about-the-project)
+- [ Sponsors ❤️](#-sponsors-️)
+  - [ Features](#-features)
+  - [ Getting Started](#-getting-started)
+    - [ Usage](#-usage)
+- [ Contributing](#-contributing)
+  - [ Help wanted 🤝](#-help-wanted-)
+  - [ Contact 💬](#-contact-)
+- [ License](#-license)
+  - [ Acknowledgements](#-acknowledgements)
 
 ## <a name="about"></a> About the Project
 
