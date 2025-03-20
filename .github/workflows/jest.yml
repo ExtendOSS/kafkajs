@@ -1,21 +1,35 @@
 # should run jest using pnpm
-name: Jest
+name: CI
 
-on: [push]
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x, 20.x]
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js 20.x
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
         with:
-          node-version: 30.x
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
       - name: Install dependencies
-        run: |
-          corepack add pnpm
-          pnpm install
-      - name: Run Jest
+        run: pnpm install
+      - name: Run linting
+        run: pnpm lint
+      - name: Run tests
         run: pnpm test
+        env:
+          CI: true

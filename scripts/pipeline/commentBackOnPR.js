@@ -23,7 +23,7 @@ const githubApi = async ({ payload }) =>
         path: `/graphql`,
         method: 'POST',
         headers: {
-          'User-Agent': 'KafkaJS Azure Pipeline',
+          'User-Agent': 'KafkaJS Pipeline',
           'Content-Type': 'application/json',
           Authorization: `token ${TOKEN}`,
         },
@@ -101,7 +101,7 @@ const commentOnPR = async () => {
         mutation CommentOnPR($subjectId: ID!) {
           addComment(input: {
             subjectId: $subjectId,
-            clientMutationId: "azure_pipelines_pre_release_hook",
+            clientMutationId: "kafkajs_pipelines_pre_release_hook",
             body: "\`${version}\` released :tada:\nhttps://www.npmjs.com/package/kafkajs/v/${version}"
           }) {
             clientMutationId

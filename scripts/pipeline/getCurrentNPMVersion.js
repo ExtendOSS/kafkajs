@@ -8,7 +8,7 @@ const getCurrentVersion = async () =>
         host: 'registry.npmjs.org',
         path: `/kafkajs`,
         headers: {
-          'User-Agent': 'KafkaJS Azure Pipeline',
+          'User-Agent': 'KafkaJS Pipeline',
         },
       },
       res => {

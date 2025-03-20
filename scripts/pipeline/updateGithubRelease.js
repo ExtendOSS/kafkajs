@@ -60,7 +60,7 @@ const getTag = async () =>
         host: 'api.github.com',
         path: `/repos/tulios/kafkajs/tags`,
         headers: {
-          'User-Agent': 'KafkaJS Azure Pipeline',
+          'User-Agent': 'KafkaJS Pipeline',
           Accept: 'application/vnd.github.v3+json',
           Authorization: `token ${TOKEN}`,
         },
@@ -100,7 +100,7 @@ const createRelease = async tag =>
         host: 'api.github.com',
         path: `/repos/tulios/kafkajs/releases`,
         headers: {
-          'User-Agent': 'KafkaJS Azure Pipeline',
+          'User-Agent': 'KafkaJS Pipeline',
           'Content-Type': 'application/json',
           Accept: 'application/vnd.github.v3+json',
           Authorization: `token ${TOKEN}`,
