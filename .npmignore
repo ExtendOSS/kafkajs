@@ -22,7 +22,6 @@ jest.config.js
 .eslintrc
 .eslintignore
 .travis.yml
-azure-pipelines.yml
 *.png
 *.svg
 logo
